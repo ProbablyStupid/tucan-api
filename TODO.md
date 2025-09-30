@@ -1,0 +1,6 @@
+- [ ] Prüfungsplan runterladen
+- [ ] Prüfungen runterladen
+- [ ] Semesterergebnisse runterladen
+- [ ] Leistungsspiegel runterladen
+- [ ] Ergebnis Cache
+- [ ] Konkatination des Kalenders
