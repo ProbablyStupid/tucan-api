@@ -112,6 +112,11 @@ def download_schedule_month(year, calendar_month):
     response2 = session.get(url2)
     return response2
 
+def flushapi():
+    session.close()
+    session = None
+    apisession = None
+    return
 
 def dumpcookies():
     print("Cookie Dump Below:")

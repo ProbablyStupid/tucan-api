@@ -4,3 +4,4 @@
 - [ ] Leistungsspiegel runterladen
 - [ ] Ergebnis Cache
 - [ ] Konkatination des Kalenders
+- [ ] python VENV
