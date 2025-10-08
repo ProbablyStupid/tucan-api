@@ -4,13 +4,15 @@ import re
 def read_env():
     file = open('.env', 'r').read()
     username = re.search('Username=(.*)(\r\n|\r|\n)', file).groups()[0]
-    password = re.search('Password=(.*)', file).groups()[0]
 
-    return {'username': username, 'password': password}
+    # The HRZ does not allow you to save passwords to a file.
+    #password = re.search('Password=(.*)', file).groups()[0]
+
+    return {'username': username}
 
 def check_env():
     file = open('.env', 'r').read()
     username = re.search('Username=(.*)(\r\n|\r|\n)', file).groups()[0]
-    password = re.search('Username=(.*)', file).groups()[0]
+    #password = re.search('Username=(.*)', file).groups()[0]
 
-    return username and password
+    return username

@@ -20,19 +20,21 @@ from maskpass import askpass
 def auto_signin():
     if env.check_env():
         auth = env.read_env()
-        response = api.signin(str(auth['username']), str(auth['password']))
+        password = askpass(prompt="Password: ", mask="")
+        response = api.signin(str(auth['username']), password)
         # TODO: validate signin
         return response
+
     else:
         auth = {}
         auth['username'] = input('username: ')
-        auth['password'] = askpass(mask="")
+        auth['password'] = askpass(prompt="Password: ", mask="")
         response = api.signin(str(auth['username']), str(auth['password']))
         # TODO: validate signin
         return response
 
 if __name__ == '__main__':
-    print("Starting TUCAN-API by Celeste Kaliwe")
+    print("--- TUCAN-API ---")
 
     response = auto_signin()
     print(response.text)
