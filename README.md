@@ -1,6 +1,6 @@
-# TUCaN API
+In 2026, TU-Darmstadt added two-factor-authentication to TUCaN, which completely breaks this api.
 
-(This page will be translated to German eventually - feel free to contribute)
+# TUCaN API
 
 ## What is this?
 
